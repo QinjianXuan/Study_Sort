@@ -1,6 +1,6 @@
 ## Git分支管理模型
 -------
-### 1.介绍一些git常用的命令
+###  1.介绍一些git常用的命令
 
 ```
 //配置用户名和邮箱
@@ -40,3 +40,11 @@ git commit -m "commit description"
 //同步本地分支到远程仓库，如果远端没有develop会自动创建
 git push origin develop
 ```
+
+### 2.推荐博客
+
+
+> * 国外行家Vincent Driessen的《A Successful Git branching model》
+博客地址：[a-successful-git-branching-model](https://nvie.com/posts/a-successful-git-branching-model/)
+> * 阮一峰老师的《Git分支管理策略》
+博客地址：[Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)
