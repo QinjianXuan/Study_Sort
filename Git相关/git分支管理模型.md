@@ -53,7 +53,7 @@ git push origin develop
 
 
 #### 1. 分支管理模型图例
-![git分支模型图](/images/git-model@2x.png)
+![git分支模型图](/Git相关/images/git-model@2x.png)
 
 
 上图出现了feture branches、develop、release branches、hotfixes、master总共五种分支
@@ -71,7 +71,7 @@ git push origin develop
 
 在主要分支中，develop是开发分支，是从master切出来的，当开发完成之后将其合并回master，然后打出一个生产包，再用tag标记一个版本的发行。
 master与develop分支的关系图：
-![master与develop关系图](/images/main-branches@2x.png)
+![master与develop关系图](/Git相关/images/main-branches@2x.png)
 
 
 ##### 临时分支
@@ -80,7 +80,7 @@ master与develop分支的关系图：
 1.feature（功能分支）添加时创建此分支，完成功能合并到develop后删除。大致流程如下：
 
 
-![feature分支示意图](/images/fb@2x.png)
+![feature分支示意图](/Git相关/images/fb@2x.png)
 
 在开发过程中会用到的git代码
 ```
@@ -111,7 +111,7 @@ git push origin develop
 2.release分支（预发布分支）
 
 
-![release分支示意图](/images/640.webp)
+![release分支示意图](/Git相关/images/640.webp)
 
 release分支可能会用的git指令
 ```
@@ -147,7 +147,7 @@ git push origin develop
 
 hotfix（bug修复分支）
 
-![hotfix分支流程图](/images/hotfix-branches@2x.png)
+![hotfix分支流程图](/Git相关/images/hotfix-branches@2x.png)
 
 hotfix分支可能会用到的git指令
 ```
@@ -186,7 +186,7 @@ git push origin develop
 
 ##### merge的三种模式
 
-![merge的三种模式](/images/merge.webp)
+![merge的三种模式](../images/merge.webp)
 
 1、git merge feature  
 默认fast-forward 模式，如上图最右边的分支合并，不是没有合并，develop分支的HEAD 直接指给了feature分支的HEAD 然后就呈现了这样的状态，但这种合并是有条件的——当我们从develop分支切出feature分支开始，到feature分支开发完合并到develop分支之前，develop分支都不能有新的提交，才会使用fast-forward模式进行合并。否则即使你用这个命令也会让你以第二种模式合并。
