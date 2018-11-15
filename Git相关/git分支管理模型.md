@@ -186,7 +186,7 @@ git push origin develop
 
 ##### merge的三种模式
 
-![merge的三种模式](../images/merge.webp)
+![merge的三种模式](/Git相关/images/merge.webp)
 
 1、git merge feature  
 默认fast-forward 模式，如上图最右边的分支合并，不是没有合并，develop分支的HEAD 直接指给了feature分支的HEAD 然后就呈现了这样的状态，但这种合并是有条件的——当我们从develop分支切出feature分支开始，到feature分支开发完合并到develop分支之前，develop分支都不能有新的提交，才会使用fast-forward模式进行合并。否则即使你用这个命令也会让你以第二种模式合并。
