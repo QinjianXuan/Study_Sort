@@ -48,3 +48,13 @@ git push origin develop
 博客地址：[a-successful-git-branching-model](https://nvie.com/posts/a-successful-git-branching-model/)
 > * 阮一峰老师的《Git分支管理策略》
 博客地址：[Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)
+
+### 3.图例与详解
+
+
+- 分支管理模型图例
+![git分支模型图](/images/git-model@2x.png)
+
+
+上图出现了feture branches、develop、release branches、hotfixes、master总共五种分支
+下面详细解析各个分支作用和用法
