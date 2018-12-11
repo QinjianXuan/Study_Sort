@@ -103,6 +103,8 @@ git checkout develop
 git merge --no-ff feature_name
 //删除本地的feature_name分支
 git branch -d feature_name
+//删除远程的feature_name分支
+git push origin --delete feature_name
 //将develop分支推送到远程仓库
 git pull origin develop
 git push origin develop
